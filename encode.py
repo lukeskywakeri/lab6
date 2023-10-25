@@ -27,7 +27,9 @@ def decode(encoded_password):
         decoded_password += element
     return decoded_password
 
-while True:
+main = True
+
+while main == True:
     print('Menu')
     print("-------------")
     print("1. Encode\n2. Decode\n3. Quit\n")
@@ -40,4 +42,4 @@ while True:
         decoded_password = decode(encoded_password)
         print(f"The encoded password is {encoded_password}, and the original password is {decoded_password}.")
     elif option == 3:
-        pass
+        main = False
