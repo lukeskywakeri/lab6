@@ -7,7 +7,7 @@ def password_encoder(password):
         encoded_password += str(encoded_digit)
     return encoded_password
 
-def main():
+while True:
     print('Menu')
     print("-------------")
     print("1. Encode\n2. Decode\n3. Quit\n")
@@ -22,4 +22,3 @@ def main():
         pass
 
 
-main()
